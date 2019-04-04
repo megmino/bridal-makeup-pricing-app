@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-US">
+  <title>Bride.Calculator</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <body>
+    <div id="container">
+	<h1>Bridal Make Up Calculator</h1>
+	<h5>Beauty by Katie</h5>
+      <div class="column"> 
+	  <h4>Bridal Party Information</h4>
+      <div id="input">
+		Bride's Application<P>
+		<input type="radio" name="application" value="0" checked> Traditional<br>
+		<input type="radio" name="application" value="1"> Airbrush<br><br><br>
+		Women getting Traditional Make Up<p> 
+		<input id="trad-amount" type="number"><br><br>
+		Women getting Airbrush Make Up<p>    
+		<input id="air-amount" type="number"><br><br>
+		Number of Juniors age 13-16 getting<br>
+		simple makeup<p> 							
+		<input id="jun-amount" type="number"><br><br>
+		</div>
+		</div>
+		<div class="column"> 
+	<h4>Wedding Information</h4>
+      <div id="input">
+		Miles to venue from zip code 40291<br> 
+		ONE WAY <p>					
+		<input id="oneway-miles" type="number"><br><br><br>
+		Wedding Day: Day of Week<p>
+		<select id="day-week" type="number">
+          <option value="0">Sunday</option>
+          <option value="1">Monday</option>
+          <option value="2">Tuesday</option>
+          <option value="3">Wednesday</option>
+          <option value="4">Thursday</option>
+		  <option value="5">Friday</option>
+		  <option value="6">Saturday</option>
+        </select>
+		<br><br><br>
+		Wedding Day: Month<p>
+		<select id="month-wed" type="number">
+          <option value="0">January</option>
+          <option value="1">February</option>
+          <option value="2">March</option>
+          <option value="3">April</option>
+          <option value="4">May</option>
+		  <option value="5">June</option>
+		  <option value="6">July</option>
+		  <option value="7">August</option>
+          <option value="8">September</option>
+          <option value="9">October</option>
+		  <option value="10">November</option>
+		  <option value="11">December</option>
+        </select>
+		</div>
+	  </div>
+	  <button class="button" onclick="getPrice()">Get Price!</button>
+		<div id="result-display1">
+        <p> <span id="result1"></span></p>
+      </div>
+	  <div id="result-display2">
+        <p> <span id="result2"></span></p>
+      </div>
+	  <p>P.S. Trials are held around a month before your weding<p>
+      </div>
+  </body>
+</html>
+
+<script src="js/script.js"></script>
